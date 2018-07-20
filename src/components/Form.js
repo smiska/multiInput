@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Input from './Input'
-import '../Form.css';
+import '../Form.css'
 
 
 export default class Form extends Component {
@@ -21,7 +21,7 @@ export default class Form extends Component {
                 numOfInputs: currentState + 1
             })
     
-            e.preventDefault();
+            e.preventDefault()
         }
     }
 
@@ -54,6 +54,6 @@ export default class Form extends Component {
             >
                 {inputsToRender}
             </form>
-        );
+        )
     } 
 }

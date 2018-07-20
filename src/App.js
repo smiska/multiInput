@@ -9,8 +9,8 @@ class App extends Component {
         <BoilerPlate />
         <Form />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
