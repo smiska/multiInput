@@ -1,6 +1,6 @@
 const inputStyles = {
     border: '0 solid transparent',
-    width:'300px',
+    width:'80%',
     borderBottom: '1px solid grey',
     display: 'inline-block',
     lineHeight: '20px',

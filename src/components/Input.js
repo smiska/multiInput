@@ -25,22 +25,24 @@ export default class Input extends Component {
 
     render() {
         return (
-            <label className="form-elem">
-                test attribute:
-                <span>
-                    <input 
-                        style={inputStyles} type="text" 
-                        value={this.state.inputvalue} 
-                        onChange={this.handleChange} 
-                        onKeyPress={
-                            !this.props.controlValue
-                                ? null
-                                : this.onKeyPress
-                        }
-                    />
-                    <i className="fal fa-times"></i>
-                </span>
-          </label>
+            <div>
+                <label className="form-elem">
+                    test attribute:
+                    <span>
+                        <input 
+                            style={inputStyles} type="text" 
+                            value={this.state.inputvalue} 
+                            onChange={this.handleChange} 
+                            onKeyPress={
+                                !this.props.controlValue
+                                    ? null
+                                    : this.onKeyPress
+                            }
+                        />
+                        <span className="close">&times;</span>
+                    </span>
+                </label>
+            </div>
         )
     }
 }

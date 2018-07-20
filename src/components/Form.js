@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Input from './Input'
-import '../Form.css'
+import './Form.css'
 
 
 export default class Form extends Component {
@@ -14,7 +14,6 @@ export default class Form extends Component {
     }
     
     onEnterPressed(e) {
-        console.log("keypress happened")
         if(e.key === 'Enter') { 
             const currentState = this.state.numOfInputs
             this.setState({
@@ -47,9 +46,6 @@ export default class Form extends Component {
                 style={{
                     margin: '100px auto',
                     width: '400px',
-                    display: 'flex',
-                    flexWrap: 'nowrap',
-                    flexDirection: 'column'
                 }}
             >
                 {inputsToRender}
